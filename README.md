@@ -9,6 +9,7 @@ Run `publish.ps1` to build `dist/fiveprs_addons.zip`. Extract it into your serve
 ensure fiveprs
 ensure fiveprs_loadscreen
 ensure fiveprs_presence
+ensure fiveprs_notes
 ```
 
 ## fiveprs_loadscreen
@@ -34,3 +35,8 @@ Settings are in its `config.lua`:
 Text can use `{name}`, `{department}`, `{agency}`, `{callsign}`, `{rank}`, `{status}`, `{territory}`, `{call}`, `{callId}` and `{location}`. Duty and call values are only available while on duty.
 
 To use your own application, create one in the [Discord Developer Portal](https://discord.com/developers/applications), copy its application ID into `AppId`, and upload images under Rich Presence > Art Assets using the asset keys in `config.lua` (`fiveprs_logo`, `police`, `ems`, `fire` and `civilian` by default).
+
+## fiveprs_notes
+`fiveprs_notes` adds a **Notes** app to the FivePRS terminal: a personal notepad for plates, names and anything else worth remembering. Notes are saved on the player's own PC, and the app shows a dot on the home screen while there are notes. `Ctrl+S` saves.
+
+It is also the reference example of a terminal app made from a resource: `client.lua` registers the app with `exports.fiveprs:registerApp` and handles its actions in `fiveprs:appAction`, and `html/` is the app page, which uses the FivePRS app SDK. Copy it as a starting point for your own apps.
