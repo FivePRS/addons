@@ -6,7 +6,7 @@ author 'Pixel <https://codemeapixel.dev>'
 description 'Optional FivePRS loading screen.'
 repository 'https://github.com/FivePRS/addons'
 license 'AGPL-3.0-or-later'
-version '1.0.0'
+version '0.9.0-ptb.1'
 
 loadscreen 'index.html'
 loadscreen_cursor 'yes'

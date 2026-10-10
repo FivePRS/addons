@@ -6,7 +6,7 @@ author 'Pixel <https://codemeapixel.dev>'
 description 'A personal notepad app for the FivePRS terminal, and an example of a resource app.'
 repository 'https://github.com/FivePRS/addons'
 license 'AGPL-3.0-or-later'
-version '1.0.0'
+version '0.9.0-ptb.1'
 
 dependency 'fiveprs'
 
