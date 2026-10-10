@@ -1,9 +1,18 @@
 # FivePRS Addons
 
-Official optional resources for [FivePRS](https://github.com/FivePRS/core). Each folder with an `fxmanifest.lua` is a standalone FiveM resource.
+Official optional resources for [FivePRS](https://github.com/FivePRS/core). Each one is a standalone FiveM resource; use the ones you want.
+
+| Addon | What it does |
+|---|---|
+| `fiveprs_loadscreen` | A FivePRS loading screen with tips, music and a welcome back card |
+| `fiveprs_presence` | Shows each player's FivePRS activity in their Discord status |
+| `fiveprs_notes` | A Notes app for the FivePRS terminal, and an example terminal app |
 
 ## Installation
-Run `publish.ps1` to build `dist/fiveprs_addons.zip`. Extract it into your server's `resources/` folder; it contains a `[fiveprs_addons]` category folder. Then add the addons you want to `server.cfg` after `ensure fiveprs`:
+1. Install [FivePRS](https://github.com/FivePRS/core) first.
+2. Download `fiveprs_addons.zip` from the latest [release](https://github.com/FivePRS/addons/releases).
+3. Extract it into your server's `resources/` folder. It contains a `[fiveprs_addons]` folder with every addon inside.
+4. Add the addons you want to `server.cfg`, after `ensure fiveprs`:
 
 ```cfg
 ensure fiveprs
