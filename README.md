@@ -21,6 +21,13 @@ ensure fiveprs_presence
 ensure fiveprs_notes
 ```
 
+To start every addon at once, use the folder instead:
+
+```cfg
+ensure fiveprs
+ensure [fiveprs_addons]
+```
+
 ## fiveprs_loadscreen
 `fiveprs_loadscreen` is a FivePRS-branded loading screen: load progress, rotating tips and a welcome back card with the player's agency and rank. Add `ensure fiveprs_loadscreen` to `server.cfg` to use it, and set your server name and tips in its `config.js`. Leave it out if your server already has a loading screen.
 
