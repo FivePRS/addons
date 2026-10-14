@@ -40,7 +40,7 @@ function showWelcome() {
 
   document.getElementById("welcome-name").textContent = profile.name;
 
-  const details = [profile.agency, profile.rank ? `Rank ${profile.rank}` : null].filter(Boolean);
+  const details = [profile.agency, profile.rankName || (profile.rank ? `Rank ${profile.rank}` : null)].filter(Boolean);
   document.getElementById("welcome-detail").textContent =
     details.length > 0 ? details.join(" · ") : "Choose your department once you spawn.";
 
